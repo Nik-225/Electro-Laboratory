@@ -1,0 +1,52 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f8fafc;
+  overflow: hidden;
+}
+
+/* Default dark grid for light backgrounds */
+.grid-pattern {
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+}
+
+/* Light grid for dark backgrounds */
+.grid-pattern-light {
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+/* Specific grids for colored themes */
+.grid-pattern-dots {
+    background-size: 20px 20px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+}
+
+.grid-pattern-lines {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+}
+
+.grid-pattern-green {
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+}
+
+.grid-pattern-warm {
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgba(120, 50, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(120, 50, 0, 0.1) 1px, transparent 1px);
+}
